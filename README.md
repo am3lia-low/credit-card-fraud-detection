@@ -41,11 +41,11 @@ FN is the more dangerous ones we want to minimise, compared to FN
 => recall is good metric to consider and maybe F1 can be KIV
 
 ### actual results
-Model | Precision | Recall | F1-Score | ROC-AUC
-Log Reg | 0.062560 | 0.878378 | 0.116801 | 0.927770
-Log Reg Weighted | 0.062560 | 0.878378 | 0.116801 | 0.927770
-Random Forest | 0.874074 | 0.797297 | 0.833922 | 0.898549
-XGBoost | 0.138798 | 0.858108 | 0.238946 | 0.924435
+Model | Precision | Recall | F1-Score | ROC-AUC  
+Log Reg | 0.062560 | 0.878378 | 0.116801 | 0.927770  
+Log Reg Weighted | 0.062560 | 0.878378 | 0.116801 | 0.927770  
+Random Forest | 0.874074 | 0.797297 | 0.833922 | 0.898549  
+XGBoost | 0.138798 | 0.858108 | 0.238946 | 0.924435  
 
 ### concluding steps
 data imbalance is extremely high, recall cannot be assessed accurately. Will have to rely on F1. This means Random Forest should be considered the best of the 4
@@ -59,3 +59,4 @@ very minimal hyperparameter tuning was made for the mdoel. more can definitely b
 3. class weighting & smote+tomek is effective for handling imbalance, but doing both might be an overkill
 4. ensemble methods generally perform better, but you need to tune them properly
 6. trade-offs require business context, not just technical optimization
+
